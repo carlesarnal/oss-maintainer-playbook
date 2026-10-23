@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beyond the First Pull Request: Making Contribution Work Sustainable</title>
+<style>body{margin:0;background:#f5f3ef;color:#242424;font:clamp(18px,2.1vw,28px) system-ui}section{display:none;box-sizing:border-box;min-height:100vh;padding:6vw}section.active{display:block}h1{font-size:clamp(28px,4vw,54px);max-width:1000px}p,li{max-width:1100px;line-height:1.5}small{color:#80502e}nav{position:fixed;bottom:12px;right:20px}button{font-size:18px;padding:8px}.notes{display:none;background:#e2efea;padding:20px}body.notes-on .notes{display:block}@media print{section{display:block;break-after:page;min-height:90vh}nav,.notes{display:none!important}}</style>
+<body>
+<section id="slide-1" class="active">
+<small>1 / 7</small>
+<h1>The question</h1>
+<p>Beyond the First Pull Request: Making Contribution Work Sustainable</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<section id="slide-2" class="">
+<small>2 / 7</small>
+<h1>Quiet does not mean abandoned</h1>
+<p>A contribution can be silent because the author owes a change, because no maintainer has reviewed it, or because both are blocked. A generic inactivity timer can ask the wrong person to act. Apicurio’s published lifecycle makes these states visible instead of treating every delay as contributor inactivity.</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<section id="slide-3" class="">
+<small>3 / 7</small>
+<h1>Separate status from authority</h1>
+<p>A reviewer suggestion identifies a candidate, not proof of available time. Approval and a fast check are separate from the full verification gate. Public PR #10409 records a suggested reviewer, my approval, bot comments about the remaining full suite and a later merge. The sequence illustrates responsibilities; one example does not establish a time-saving benchmark.</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<section id="slide-4" class="">
+<small>4 / 7</small>
+<h1>Make policy trade-offs explicit</h1>
+<p>The documented process does not auto-close a PR blocked only on a maintainer. It adds an overdue signal. When both author and maintainer are blocked, the contributor timer takes precedence. That detail belongs in the discussion: an ownership-aware policy can still have contested choices and needs maintainers to keep it accurate.</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<section id="slide-5" class="">
+<small>5 / 7</small>
+<h1>Start smaller than a bot</h1>
+<p>The hand-off worksheet asks for current owner, evidence needed, next action and escalation if the owner is unavailable. A documented convention may be sufficient before automation is justified. The goal is a process a small team can sustain, not a claim that automation eliminates overload or proves community growth. Review waiting time and repeat participation are signals to investigate, not causal conclusions.</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<section id="slide-6" class="">
+<small>6 / 7</small>
+<h1>Verification boundary</h1>
+<p>Public PR lifecycle and Carles review on #10409 inspected. Workshop/state table prepared. Automation effectiveness and contributor-retention outcomes were not measured.</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<section id="slide-7" class="">
+<small>7 / 7</small>
+<h1>Takeaways</h1>
+<p>- A checklist for reviewing the contributor path from issue to follow-up<br>- Ways to make review ownership and response expectations explicit<br>- A method for evaluating process changes without overclaiming their effect on community growth</p>
+<aside class="notes">Explain the evidence, then its boundary. Use the corresponding section in PRESENTATION_GUIDE.md.</aside>
+</section>
+<nav>
+<button id="prev" aria-label="Previous slide">←</button> <button id="next" aria-label="Next slide">→</button>
+</nav>
+<script>let n=0;const s=[...document.querySelectorAll('section')];function show(i){n=Math.max(0,Math.min(s.length-1,i));s.forEach((x,j)=>x.classList.toggle('active',j===n));history.replaceState(null,'','#slide-'+(n+1));}function fromHash(){const m=location.hash.match(/^#slide-(\d+)$/);if(m)show(Number(m[1])-1);}document.addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();show(n+1)}if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();show(n-1)}if(e.key==='Home')show(0);if(e.key==='End')show(s.length-1);if(e.key.toLowerCase()==='n')document.body.classList.toggle('notes-on');if(e.key.toLowerCase()==='f')document.documentElement.requestFullscreen?.();});document.querySelector('#prev').onclick=()=>show(n-1);document.querySelector('#next').onclick=()=>show(n+1);window.addEventListener('hashchange',fromHash);fromHash();</script>
+</body>
+</html>
