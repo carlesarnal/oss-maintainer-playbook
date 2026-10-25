@@ -10,8 +10,8 @@ Public PR lifecycle and Carles review on #10409 inspected. Workshop/state table 
 Read handoff.md and trace public PR #10409
 ```
 
-A documentation or model check is not an integration test. New results must record source revision, runtime versions, command, observed outcome and remaining limits. No acceptance score is guaranteed.
+A documentation or model check is not an integration test. New results must record source revision, runtime versions, command, observed outcome and remaining limits.
 
 ## Package checks
 
-Offline deck navigation/layout and documentation links are checked separately from application behavior. No claim of a five-star speaking performance is made by these artifacts.
+Offline deck navigation/layout and documentation links are checked separately from application behavior.

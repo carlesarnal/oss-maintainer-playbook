@@ -10,33 +10,33 @@ A contribution can be silent because the author owes a change, because no mainta
 
 ### 0:00 — Who owns the next action?
 
-Say: A contribution can be silent because the author owes a change, because no maintainer has reviewed it, or because both are blocked. A generic inactivity timer can ask the wrong person to act. Apicurio’s published lifecycle makes these states visible instead of treating every delay as contributor inactivity.
+A contribution can be silent because the author owes a change, because no maintainer has reviewed it, or because both are blocked. A generic inactivity timer can ask the wrong person to act. Apicurio’s published lifecycle makes these states visible instead of treating every delay as contributor inactivity.
 
-Show the corresponding diagram, source record or actual command output. Pause to identify the observation that supports the claim.
+Open the waiting-on-author and waiting-on-maintainer states in the published lifecycle.
 
-### 4:00 — Waiting on author versus maintainer
+### 4:00 — Follow a review through verification
 
-Say: A reviewer suggestion identifies a candidate, not proof of available time. Approval and a fast check are separate from the full verification gate. Public PR #10409 records a suggested reviewer, my approval, bot comments about the remaining full suite and a later merge. The sequence illustrates responsibilities; one example does not establish a time-saving benchmark.
+A reviewer suggestion identifies a candidate, not proof of available time. Approval and a fast check are separate from the full verification gate. Public PR #10409 records a suggested reviewer, my approval, bot comments about the remaining full suite and a later merge. The sequence illustrates responsibilities; one example does not establish a time-saving benchmark.
 
-Show the corresponding diagram, source record or actual command output. Pause to identify the observation that supports the claim.
+Follow PR #10409 from reviewer suggestion through approval, full verification and merge.
 
-### 9:00 — A suggestion is not accepted ownership
+### 9:00 — Escalation when both sides are blocked
 
-Say: The documented process does not auto-close a PR blocked only on a maintainer. It adds an overdue signal. When both author and maintainer are blocked, the contributor timer takes precedence. That detail belongs in the discussion: an ownership-aware policy can still have contested choices and needs maintainers to keep it accurate.
+The documented process does not auto-close a PR blocked only on a maintainer. It adds an overdue signal. When both author and maintainer are blocked, the contributor timer takes precedence. That detail belongs in the discussion: an ownership-aware policy can still have contested choices and needs maintainers to keep it accurate.
 
-Show the corresponding diagram, source record or actual command output. Pause to identify the observation that supports the claim.
+Discuss the documented both-sides-blocked timer policy and its trade-off.
 
-### 15:00 — Approval and full verification differ
+### 15:00 — Adapt the hand-off worksheet
 
-Say: The hand-off worksheet asks for current owner, evidence needed, next action and escalation if the owner is unavailable. A documented convention may be sufficient before automation is justified. The goal is a process a small team can sustain, not a claim that automation eliminates overload or proves community growth. Review waiting time and repeat participation are signals to investigate, not causal conclusions.
+The hand-off worksheet asks for current owner, evidence needed, next action and escalation if the owner is unavailable. A documented convention may be sufficient before automation is justified. The goal is a process a small team can sustain, not a claim that automation eliminates overload or proves community growth. Review waiting time and repeat participation are signals to investigate, not causal conclusions.
 
-Show the corresponding diagram, source record or actual command output. Pause to identify the observation that supports the claim.
+Use handoff.md to identify the next action and owner in a delayed contribution.
 
 ### 21:00 — Escalate without blaming the wrong person
 
-Say: Use the evidence boundary to choose the next action.
+Summarize the decision the example supports and the assumptions behind it.
 
-Show the corresponding diagram, source record or actual command output. Pause to identify the observation that supports the claim.
+Ask which handoff can be clarified without introducing another automation service.
 
 ### 26:00 — Questions and buffer
 
